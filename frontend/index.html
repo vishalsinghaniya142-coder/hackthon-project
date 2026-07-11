@@ -3,10 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hackethon</title>
+    <title>Student Registration Form</title>
 </head>
 <body>
-    <h1>welcome to hackethon</h1>
-    <script src = "hack.js"></script>
+
+    <h2>Student Registration Form</h2>
+
+    <form action="#" method="post">
+
+        <!-- Name -->
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password">
+        <br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label><br>
+
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+
+        <br><br>
+
+        <!-- Hobbies -->
+        <label>Hobbies:</label><br>
+
+        <input type="checkbox" id="reading" name="hobby" value="Reading">
+        <label for="reading">Reading</label>
+
+        <input type="checkbox" id="coding" name="hobby" value="Coding">
+        <label for="coding">Coding</label>
+
+        <input type="checkbox" id="sports" name="hobby" value="Sports">
+        <label for="sports">Sports</label>
+
+        <br><br>
+
+        <!-- Course -->
+        <label for="course">Select Course:</label><br>
+        <select id="course" name="course">
+            <option value="">--Choose Course--</option>
+            <option>BCA</option>
+            <option>B.Tech</option>
+            <option>B.Sc</option>
+            <option>MCA</option>
+        </select>
+
+        <br><br>
+
+        <!-- Date -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob">
+
+        <br><br>
+
+        <!-- Message -->
+        <label for="message">Address:</label><br>
+        <textarea id="message" name="message" rows="4" cols="30" placeholder="Enter your address"></textarea>
+
+        <br><br>
+
+        <!-- Submit & Reset -->
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+
+    </form>
+    <script src="hack.js"></script>
+
 </body>
 </html>
